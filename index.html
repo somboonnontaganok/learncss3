@@ -7,34 +7,56 @@
     <title>CSS Unit Example</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
-        div.message {
-            background-color: greenyellow;
-            width: 50%;
-            max-width: 840px;
-            max-height: 100px;
-            height: 200px;
-            text-align: justify;
+        div{
+            width: 80px;
+            height: 80px;
+        }
+        .box-1{
+            background-color: lightgreen;
+            border: solid 5px black;
+        }
+        .box-2{
+            background-color: blue;
+            border: dotted 5px red;
+        }
+        div.box-3{
+            background-color: pink;
+            border-style: dashed;   /*only border-style is supported*/
+        }
+        div.box-4{
+            background-color: yellow;
+            border: solid 5px blue;
+            border-radius: 15px;
+        }
+        .box-5{
+            background-color: green;
+            border-top-style: solid;
+            border-left-style: dashed;
+            border-right-style: dotted;
+            border-bottom-style: double;
         }
         img{
-            width: 50%;
-            height: 50%;
-        }
-        button{
-            width: auto;
-            height: auto;
-        }
-        h1{
-            color: lightblue;
+            border: solid 5px greenyellow;
+            border-radius: 15px;
+            width: 400px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to Poon Studio</h1>
-    <div class="message"></div>
-    <img src="https://cdn.pixabay.com/photo/2023/01/23/09/26/cat-7738210_1280.jpg" alt="">
-    <button>OK</button>
+    <div class="box-1"></div>
+    <hr>
+    <div class="box-2"></div>
+    <hr>
+    <div class="box-3"></div>
+    <hr>
+    <div class="box-4"></div>
+    <hr>
+    <div class="box-5"></div>
+    <hr>
+    <img src="https://cdn.pixabay.com/photo/2021/10/08/01/40/woman-6690025_960_720.jpg" alt="">
 </body>
 <footer>
-    <div>Copyright: &#169; 2023 by Somboon Nontaganok</div>
+    <hr>
+    <center>Copyright: &#169; 2023 by Somboon Nontaganok</center>
 </footer>
 </html>
