@@ -6,43 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Unit Example</title>
     <style>
-       li{
-           display: inline;
-       }
-       li a{
-           padding-right: 20px;
-       }
-       a:link{
-           text-decoration: none;
-       }
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            height: 4000px;
+        }
        .box{
-           width: 30%;
-           box-sizing: border-box;
-           display: inline-block;
-           padding: 20px;
-           background-color: #f4f4f4;
+            width: 100px;
+            height:100px;
+       }
+       #box-1 {
+            background-color: orange;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            z-index: 1;/*send to front container*/
+       }
+       #box-2 {
+            background-color: greenyellow;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+       }
+       #box-3 {
+            background-color: purple;
+            position: absolute;
+            top: 200px;
+            right: 50px;
+       }
+       #box-4 {
+            background-color: pink;
+            position: fixed;
+       }
+       #box-5 {
+            background-color: red;
+            position:  sticky;
+            top: 0;
+       }
+       #box-6 {
+            background-color: yellow;
+            position:  sticky;
+            margin-top: 500px;
+            top: 0;/*Stick to above border*/
+       }
+       .container{
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background-color: #333;
        }
     </style>
 </head>
 <body>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Page</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <hr>
-    <div class="box">
-        <h1>Title 1</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquam animi suscipit, illo error ipsa. Ipsa praesentium quod totam pariatur at optio in, unde a quasi. Sed nulla commodi incidunt.</p>
+    <a href="#box-5">box5</a>
+    <a href="#box-6">box6</a>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
     </div>
-    <div class="box">
-        <h1>Title 2</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquam animi suscipit, illo error ipsa. Ipsa praesentium quod totam pariatur at optio in, unde a quasi. Sed nulla commodi incidunt.</p>
-    </div>
-    <div class="box">
-        <h1>Title 3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquam animi suscipit, illo error ipsa. Ipsa praesentium quod totam pariatur at optio in, unde a quasi. Sed nulla commodi incidunt.</p>
-    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+    <div id="box-6" class="box"></div>
 </body>
 </html>
