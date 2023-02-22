@@ -7,10 +7,13 @@
     <title>CSS Unit Example</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
-        div{
+        div.message {
             background-color: greenyellow;
-            width: auto;
+            width: 50%;
+            max-width: 840px;
+            max-height: 100px;
             height: 200px;
+            text-align: justify;
         }
         img{
             width: 50%;
@@ -19,11 +22,19 @@
         button{
             width: auto;
             height: auto;
+        }
+        h1{
+            color: lightblue;
+        }
     </style>
 </head>
 <body>
-    <div></div>
+    <h1>Welcome to Poon Studio</h1>
+    <div class="message"></div>
     <img src="https://cdn.pixabay.com/photo/2023/01/23/09/26/cat-7738210_1280.jpg" alt="">
     <button>OK</button>
 </body>
+<footer>
+    <div>Copyright: &#169; 2023 by Somboon Nontaganok</div>
+</footer>
 </html>
