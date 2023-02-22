@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Unit Example</title>
     <style>
-        /* Intenal embed */
-        p{
-            font-size: 12pt;
+        body {
+            font-size:10px;
         }
-        .message{
-            font-size: 2pc;
+        div{
+            font-size: 2em;
         }
     </style>
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <p>CSS3</p>
-    <p class="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate minima, ut reprehenderit voluptatem placeat fugiat ipsam eius expedita quod iste accusamus tempore similique ab hic, doloribus, laborum corrupti temporibus sed?</p>
+    <div>
+        test1 (10x2 = 20px) <!--compare with body-->
+        <div>
+            test2 (20x2 = 40px)
+            <div>
+                test3 (40x2 = 80px)
+                <div>test4 (80x2 = 160px</div>
+            </div>
+        </div>
+    </div>
+    <p style="font-size: 160px">Poon</p> <!--Check size = test4-->
 </body>
 </html>
