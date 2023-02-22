@@ -9,27 +9,44 @@
 <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
 <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-size:10px;
-            font-family: 'Sriracha', cursive;
+        .message {
+            font-size: medium;
+            color: orange;
+            font-weight: 500
+        }
+
+        #title{
+            font-size: 20px;
+            color: hotpink;
+            font-style: italic;;
         }
         div{
-            font-size: 2em;
+            color: rgba(230, 0, 65, 1); /* alpha 1 เข้มสุด */
+        }
+        *{
+            font-size: 20px;
+            background-color: hsl(124, 29%, 91%);
         }
     </style>
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
-    <div>
-        test1 (10x2 = 20px) <!--compare with body-->
-        <div>
-            test2 (20x2 = 40px)
-            <div>
-                test3 (40x2 = 80px)
-                <div>test4 (80x2 = 160px</div>
-            </div>
-        </div>
+    <h1>Poon</h1>
+    <p class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate quam nesciunt aperiam ut? Atque in reiciendis architecto quia dignissimos nobis veritatis dicta ad dolor dolores? Sit vel doloribus rem est.</p>
+    <hr>
+    <h1>CSS3</h1>
+    <p id="title">
+        ปุ่น สตูดิโอ
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita cupiditate odio eligendi recusandae itaque praesentium. Id, assumenda magni doloribus iusto fugiat non error fugit nam tempore velit a consectetur.
+    </p>
+    <hr>
+    <div style="border: 1px solid black;" width="500px" height="200px">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro fugit rem vitae, hic adipisci harum quod pariatur nisi earum voluptatem impedit exercitationem non deserunt quas repudiandae necessitatibus quo! Ab, perferendis.
     </div>
-    <p style="font-size: 160px">Poon</p> <!--Check size = test4-->
+    <hr>
+    <form action="">
+        <label for="name">ชื่อ</label>
+        <input type="text" name="name" id="name" placeholder="ป้อนชื่อของคุณ">
+    </form>
 </body>
 </html>
